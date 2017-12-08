@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title {
+  background-color: #F48C68;
+  text-align: right;
+  color: white;
+  padding: 50px 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.first-image {
+  border-bottom: 20px solid #F48C68;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-image:url('../assets/images/uno.jpg');
+}
+
+.green-background {
+  text-align: center;
+  color: white;
+  background-color: #ABE188;
+  padding: 50px 0;
+}
+
+.about-pandas {
+  background-color: #F48C68;
+  padding: 20px;
+  margin: auto;
+}
+
+.Second-image {
+  border-top: 20px solid #F48C68;
+  border-bottom: 20px solid #F48C68;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-image:url('../assets/images/dos.jpg');
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+}
+
+.picture-panda {
+  border: 0.5em solid white;
+  width: 80%;
+}
+
+.third-image {
+  border-top: 20px solid #F48C68;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  background-image:url('../assets/images/tres.jpg');
+}
+
+footer {
+  color: white;
+  background-color: #F48C68;
+  padding: 10px;
+  text-align: right;
+}
+/*grid ,@media*/
+[class*='column-'] {
+  float: left;
+}
+
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.column-xs-12 {
+  width: 100%;
+}
+
+.column-xs-4 {
+  width: 50%;
+  margin-left: 25%
+}
+
+.column-xs-6 {
+  width: 25%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .column-xs-6 {
+    width: 25%;
+  }
+  .column-fill {
+    margin-left: 8.3%;
+  }
+
+}
+
+/* Desktop*/
+@media (min-width: 992px) {
+  .column-xs-6 {
+    width: 25%;
+  }
+  .column-fill {
+    margin-left: 24.96%;
+  }
+}
